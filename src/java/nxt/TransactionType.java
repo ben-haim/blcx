@@ -94,9 +94,33 @@ public abstract class TransactionType {
                     default:
                         return null;
                 }
-         
-     
-      
+            case TYPE_MESSAGING:
+                switch (subtype) {
+                    case SUBTYPE_MESSAGING_ARBITRARY_MESSAGE:
+                        return Messaging.ARBITRARY_MESSAGE;
+                    case SUBTYPE_MESSAGING_ALIAS_ASSIGNMENT:
+                        return Messaging.ALIAS_ASSIGNMENT;                                    
+                    case SUBTYPE_MESSAGING_HUB_ANNOUNCEMENT:
+                        throw new IllegalArgumentException("Hub Announcement no longer supported");
+                    case SUBTYPE_MESSAGING_ACCOUNT_INFO:
+                        return Messaging.ACCOUNT_INFO;
+                    case SUBTYPE_MESSAGING_ALIAS_SELL:
+                        return Messaging.ALIAS_SELL;
+                    case SUBTYPE_MESSAGING_ALIAS_BUY:
+                        return Messaging.ALIAS_BUY;
+                    case SUBTYPE_MESSAGING_ALIAS_DELETE:
+                        return Messaging.ALIAS_DELETE;
+                    case SUBTYPE_MESSAGING_PHASING_VOTE_CASTING:
+                    
+                    case SUBTYPE_MESSAGING_ACCOUNT_PROPERTY:
+                        return Messaging.ACCOUNT_PROPERTY;
+                    case SUBTYPE_MESSAGING_ACCOUNT_PROPERTY_DELETE:
+                        return Messaging.ACCOUNT_PROPERTY_DELETE;
+                    default:
+                        return null;
+                }
+          
+           
             case TYPE_ACCOUNT_CONTROL:
                 switch (subtype) {
                     case SUBTYPE_ACCOUNT_CONTROL_EFFECTIVE_BALANCE_LEASING:
@@ -106,8 +130,7 @@ public abstract class TransactionType {
                     default:
                         return null;
                 }
-           
-         
+          
             case TYPE_SHUFFLING:
                 return ShufflingTransaction.findTransactionType(subtype);
             default:
