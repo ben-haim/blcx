@@ -220,7 +220,7 @@ var NRS = (function(NRS, $) {
 			"desiredPosition": 60,
 			"depends": { tags: [ NRS.constants.API_TAGS.DATA ] }
 		};
-		NRS.addTreeviewSidebarMenuItem(options);
+		
 		options = {
 			"titleHTML": '<span data-i18n="search">Search</span></a>',
 			"type": 'PAGE',

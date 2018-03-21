@@ -2059,7 +2059,7 @@ var NRS = (function (NRS, $, undefined) {
             "desiredPosition": 30,
             "depends": { tags: [ NRS.constants.API_TAGS.AE ] }
         };
-        NRS.addTreeviewSidebarMenuItem(options);
+        
         options = {
             "titleHTML": '<span data-i18n="asset_exchange">Asset Exchange</span>',
             "type": 'PAGE',

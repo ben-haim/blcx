@@ -264,7 +264,7 @@ var NRS = (function(NRS, $, undefined) {
 			"desiredPosition": 50,
 			"depends": { tags: [ NRS.constants.API_TAGS.VS ] }
 		};
-		NRS.addTreeviewSidebarMenuItem(options);
+		
 		options = {
 			"titleHTML": '<span data-i18n="active_polls">Active Polls</span>',
 			"type": 'PAGE',

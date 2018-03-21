@@ -1052,7 +1052,7 @@ var NRS = (function(NRS, $, undefined) {
 			"page": 'dashboard',
 			"desiredPosition": 10
 		};
-		NRS.addTreeviewSidebarMenuItem(options);
+		NRS.addTreeviewSidebarMenuItem(options)
 		options = {
 			"titleHTML": '<span data-i18n="dashboard">Dashboard</span>',
 			"type": 'PAGE',

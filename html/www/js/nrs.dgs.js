@@ -365,7 +365,7 @@ var NRS = (function(NRS, $) {
 			"desiredPosition": 60,
 			"depends": { tags: [ NRS.constants.API_TAGS.DGS ] }
 		};
-		NRS.addTreeviewSidebarMenuItem(options);
+		
 		options = {
 			"titleHTML": '<span data-i18n="marketplace">Marketplace</span></a>',
 			"type": 'PAGE',
