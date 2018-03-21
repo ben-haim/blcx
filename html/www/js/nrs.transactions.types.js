@@ -21,19 +21,7 @@ var NRS = (function(NRS, $, undefined) {
     // If you add new mandatory attributes, please make sure to add them to
     // NRS.loadTransactionTypeConstants as well (below)
     NRS.transactionTypes = {
-        0: {
-            'title': "Payment",
-            'i18nKeyTitle': 'payment',
-            'iconHTML': "<i class='ion-calculator'></i>",
-            'subTypes': {
-                0: {
-                    'title': "Ordinary Payment",
-                    'i18nKeyTitle': 'ordinary_payment',
-                    'iconHTML': "<i class='fa fa-money'></i>",
-                    'receiverPage': 'transactions'
-                }
-            }
-        },
+     
         1: {
             'title': "Messaging/Voting/Aliases",
             'i18nKeyTitle': 'messaging_voting_aliases',

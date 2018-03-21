@@ -1082,7 +1082,7 @@ var NRS = (function(NRS, $, undefined) {
 			"type": 'PAGE',
 			"page": 'approval_requests_account'
 		};
-		NRS.appendMenuItemToTSMenuItem(sidebarId, options);
+		
 	};
 
 	$(document).on("click", "#transactions_type_navi li a", function(e) {
