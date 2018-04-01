@@ -506,7 +506,7 @@
   "forged_balance": "Mined Balance",
   "forged_by_you": "Mined By You",
   "forged_fees_total": "Mined Fees Total",
-  "forging": "Forging",
+  "forging": "Mining",
   "fork_warning": "Warning: You are most likely on a fork (you have Mined the last 10 blocks).",
   "form_warnings": "Form Warnings",
   "form_warnings_help": "Show a warning when an amount / fee entered is higher than specified below.",
