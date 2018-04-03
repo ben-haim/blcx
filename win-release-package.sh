@@ -5,7 +5,7 @@ then
 	echo VERSION not defined
 	exit 1
 fi
-APPLICATION="nxt-clone"
+APPLICATION="Blcx-app-win-release"
 PACKAGE=${APPLICATION}-client-${VERSION}
 echo PACKAGE="${PACKAGE}"
 CHANGELOG=nxt-clone-client-${VERSION}.changelog.txt

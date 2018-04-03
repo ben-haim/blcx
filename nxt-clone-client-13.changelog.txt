@@ -1,0 +1,12 @@
+Release 13
+
+https://www.jelurida.com/
+
+sha256 checksums:
+
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  Blcx-app-win-release-client-13.jar
+
+
+Change log:
+
+
