@@ -1,5 +1,5 @@
 ----
-# Blockchain Coin BLCX is a clone of https://www.jelurida.com/ NXT POS coin  #
+# [Blockchain Coin BLCX](https://blcxx.github.io/) is a clone of [Jelurida](https://www.jelurida.com) NXT POS coin  #
 
 BLCX changes from NXT 
 1. Remove all tokens/market/voting system and other api
@@ -19,6 +19,12 @@ To run a wallet node (you need java runtime https://java.com/en/download/)
 
 To open API page 
 http://localhost:7876/test
+
+
+
+
+
+[Website](https://blcxx.github.io/)
 
 
 
