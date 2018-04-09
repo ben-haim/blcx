@@ -1,3 +1,5 @@
+![logo](https://github.com/blcxx/blcxx.github.io/blob/master/blcxlogo.png)
+
 ----
 # [Blockchain Coin BLCX](https://blcxx.github.io/) is a clone of [Jelurida](https://www.jelurida.com) NXT POS coin  #
 
