@@ -11,7 +11,7 @@ BLCX changes from NXT
 
 To run a wallet node (you need java runtime https://java.com/en/download/)
 
-1. Download the zip package https://github.com/jonnytracker/blcx/blob/master/Blcx-app-client-13.zip
+1. Download the zip wallet package https://github.com/jonnytracker/blcx/blob/master/Blcx-app-client-13.zip
 2. Extract and run the file run.bat
 3. A desktop wallet will open up or
 4. In your browser enter http://localhost:7876
