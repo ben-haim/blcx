@@ -25,8 +25,7 @@ http://localhost:7876/test
 
 
 
-
-[Website](https://blcxx.github.io/)
+#For airdrop and bounty and social channel visit [Website](https://blcxx.github.io/)
 
 
 
