@@ -110,7 +110,7 @@ public abstract class TransactionType {
                         return Messaging.ALIAS_BUY;
                     case SUBTYPE_MESSAGING_ALIAS_DELETE:
                         return Messaging.ALIAS_DELETE;
-                    case SUBTYPE_MESSAGING_PHASING_VOTE_CASTING:
+                    
                     
                     case SUBTYPE_MESSAGING_ACCOUNT_PROPERTY:
                         return Messaging.ACCOUNT_PROPERTY;
@@ -132,7 +132,7 @@ public abstract class TransactionType {
                 }
           
             case TYPE_SHUFFLING:
-                return ShufflingTransaction.findTransactionType(subtype);
+                return null;
             default:
                 return null;
         }

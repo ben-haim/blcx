@@ -16,7 +16,7 @@
 
 /**
  * @depends {nrs.js}
- */
+ 
 var NRS = (function(NRS, $) {
     var EXCHANGE_NAME = "changelly";
     var DEPOSIT_ADDRESSES_KEY = "changelly.depositAddresses.";
@@ -535,3 +535,5 @@ var NRS = (function(NRS, $) {
 
     return NRS;
 }(NRS || {}, jQuery));
+
+*/

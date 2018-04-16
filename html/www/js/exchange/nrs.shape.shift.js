@@ -16,7 +16,7 @@
 
 /**
  * @depends {nrs.js}
- */
+ 
 var NRS = (function(NRS, $) {
     var EXCHANGE_NAME = "shape_shift";
     var DEPOSIT_ADDRESSES_KEY = "shapeshift.depositAddresses.";
@@ -798,3 +798,5 @@ var NRS = (function(NRS, $) {
 
 	return NRS;
 }(NRS || {}, jQuery));
+
+*/
