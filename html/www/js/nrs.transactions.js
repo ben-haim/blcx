@@ -1064,12 +1064,7 @@ var NRS = (function(NRS, $, undefined) {
 			"type": 'PAGE',
 			"page": 'ledger'
 		};
-		NRS.appendMenuItemToTSMenuItem(sidebarId, options);
-		options = {
-			"titleHTML": '<span data-i18n="account_properties">Account Properties</span>',
-			"type": 'PAGE',
-			"page": 'account_properties'
-		};
+		
 		NRS.appendMenuItemToTSMenuItem(sidebarId, options);
 		options = {
 			"titleHTML": '<span data-i18n="my_transactions">My Transactions</span>',
