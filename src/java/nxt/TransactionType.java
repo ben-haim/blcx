@@ -99,7 +99,11 @@ public abstract class TransactionType {
                     case SUBTYPE_MESSAGING_ARBITRARY_MESSAGE:
                         return Messaging.ARBITRARY_MESSAGE;
                     case SUBTYPE_MESSAGING_ALIAS_ASSIGNMENT:
-                        return Messaging.ALIAS_ASSIGNMENT;                                    
+                        return Messaging.ALIAS_ASSIGNMENT;
+                    case SUBTYPE_MESSAGING_POLL_CREATION:
+                        return Messaging.POLL_CREATION;
+                    case SUBTYPE_MESSAGING_VOTE_CASTING:
+                        return Messaging.VOTE_CASTING;
                     case SUBTYPE_MESSAGING_HUB_ANNOUNCEMENT:
                         throw new IllegalArgumentException("Hub Announcement no longer supported");
                     case SUBTYPE_MESSAGING_ACCOUNT_INFO:
@@ -110,8 +114,8 @@ public abstract class TransactionType {
                         return Messaging.ALIAS_BUY;
                     case SUBTYPE_MESSAGING_ALIAS_DELETE:
                         return Messaging.ALIAS_DELETE;
-                    
-                    
+                    case SUBTYPE_MESSAGING_PHASING_VOTE_CASTING:
+                        return Messaging.PHASING_VOTE_CASTING;
                     case SUBTYPE_MESSAGING_ACCOUNT_PROPERTY:
                         return Messaging.ACCOUNT_PROPERTY;
                     case SUBTYPE_MESSAGING_ACCOUNT_PROPERTY_DELETE:
@@ -119,8 +123,48 @@ public abstract class TransactionType {
                     default:
                         return null;
                 }
-          
-           
+            case TYPE_COLORED_COINS:
+                switch (subtype) {
+                    case SUBTYPE_COLORED_COINS_ASSET_ISSUANCE:
+                        return ColoredCoins.ASSET_ISSUANCE;
+                    case SUBTYPE_COLORED_COINS_ASSET_TRANSFER:
+                        return ColoredCoins.ASSET_TRANSFER;
+                    case SUBTYPE_COLORED_COINS_ASK_ORDER_PLACEMENT:
+                        return ColoredCoins.ASK_ORDER_PLACEMENT;
+                    case SUBTYPE_COLORED_COINS_BID_ORDER_PLACEMENT:
+                        return ColoredCoins.BID_ORDER_PLACEMENT;
+                    case SUBTYPE_COLORED_COINS_ASK_ORDER_CANCELLATION:
+                        return ColoredCoins.ASK_ORDER_CANCELLATION;
+                    case SUBTYPE_COLORED_COINS_BID_ORDER_CANCELLATION:
+                        return ColoredCoins.BID_ORDER_CANCELLATION;
+                    case SUBTYPE_COLORED_COINS_DIVIDEND_PAYMENT:
+                        return ColoredCoins.DIVIDEND_PAYMENT;
+                    case SUBTYPE_COLORED_COINS_ASSET_DELETE:
+                        return ColoredCoins.ASSET_DELETE;
+                    default:
+                        return null;
+                }
+            case TYPE_DIGITAL_GOODS:
+                switch (subtype) {
+                    case SUBTYPE_DIGITAL_GOODS_LISTING:
+                        return DigitalGoods.LISTING;
+                    case SUBTYPE_DIGITAL_GOODS_DELISTING:
+                        return DigitalGoods.DELISTING;
+                    case SUBTYPE_DIGITAL_GOODS_PRICE_CHANGE:
+                        return DigitalGoods.PRICE_CHANGE;
+                    case SUBTYPE_DIGITAL_GOODS_QUANTITY_CHANGE:
+                        return DigitalGoods.QUANTITY_CHANGE;
+                    case SUBTYPE_DIGITAL_GOODS_PURCHASE:
+                        return DigitalGoods.PURCHASE;
+                    case SUBTYPE_DIGITAL_GOODS_DELIVERY:
+                        return DigitalGoods.DELIVERY;
+                    case SUBTYPE_DIGITAL_GOODS_FEEDBACK:
+                        return DigitalGoods.FEEDBACK;
+                    case SUBTYPE_DIGITAL_GOODS_REFUND:
+                        return DigitalGoods.REFUND;
+                    default:
+                        return null;
+                }
             case TYPE_ACCOUNT_CONTROL:
                 switch (subtype) {
                     case SUBTYPE_ACCOUNT_CONTROL_EFFECTIVE_BALANCE_LEASING:
@@ -130,9 +174,19 @@ public abstract class TransactionType {
                     default:
                         return null;
                 }
-          
+            case TYPE_MONETARY_SYSTEM:
+                return MonetarySystem.findTransactionType(subtype);
+            case TYPE_DATA:
+                switch (subtype) {
+                    case SUBTYPE_DATA_TAGGED_DATA_UPLOAD:
+                        return Data.TAGGED_DATA_UPLOAD;
+                    case SUBTYPE_DATA_TAGGED_DATA_EXTEND:
+                        return Data.TAGGED_DATA_EXTEND;
+                    default:
+                        return null;
+                }
             case TYPE_SHUFFLING:
-                return null;
+                return ShufflingTransaction.findTransactionType(subtype);
             default:
                 return null;
         }
